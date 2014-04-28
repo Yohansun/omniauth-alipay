@@ -28,10 +28,6 @@ module OmniAuth
           'nickname' => raw_info['real_name'],
           'email' => raw_info['logon_id'],
           'sex' => raw_info['sex']
-          'user_info' => raw_info,
-          'extra' => {
-            'user_hash' => raw_info,
-          },
         }
       end
 
@@ -44,7 +40,7 @@ module OmniAuth
 
           # TODO to be moved in options
           # TODO add more default fields (http://my.open.taobao.com/apidoc/index.htm#categoryId:1-dataStructId:3)
-          :fields => 'alipay_user_id,real_name,logon_id,sex,user_status,user_type,user_type,created,last_visit,birthday,type,status,alipay_no,alipay_account,alipay_account,consumer_protection,alipay_bind',
+          :fields => 'alipay_user_id,real_name,logon_id,sex,user_status,user_type,created,last_visit,birthday,type,status',
           :format => 'json',
           :method => USER_METHODS[user_type],
           :session => @access_token.token,
