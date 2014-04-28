@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'omniauth-alipay'
-  s.version     = '0.0.1'
+  s.version     = '0.0.2'
   s.date        = '2014-04-28'
   s.summary     = 'Greeting from Topico'
   s.description = 'this is a alipay oauth 2.0 gem based on omniauth'
