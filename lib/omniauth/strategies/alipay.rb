@@ -1,8 +1,7 @@
-# lots of stuff taken from https://github.com/intridea/omniauth/blob/0-3-stable/oa-oauth/lib/omniauth/strategies/oauth2/taobao.rb
 require 'omniauth-oauth2'
 module OmniAuth
   module Strategies
-    class Taobao < OmniAuth::Strategies::OAuth2
+    class Alipay < OmniAuth::Strategies::OAuth2
       USER_METHODS = {
         :default => 'alipay.user.get'
       }
@@ -37,9 +36,6 @@ module OmniAuth
         user_type = options.client_options.user_type || :default
         query_param = {
           :app_key => options.client_id,
-
-          # TODO to be moved in options
-          # TODO add more default fields (http://my.open.taobao.com/apidoc/index.htm#categoryId:1-dataStructId:3)
           :fields => 'alipay_user_id,real_name,logon_id,sex,user_status,user_type,created,last_visit,birthday,type,status',
           :format => 'json',
           :method => USER_METHODS[user_type],

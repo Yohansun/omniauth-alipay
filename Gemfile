@@ -1,4 +1,4 @@
 source "http://rubygems.org"
 
-# Specify your gem's dependencies in omniauth-taobao.gemspec
+# Specify your gem's dependencies in omniauth-alipay.gemspec
 gemspec
