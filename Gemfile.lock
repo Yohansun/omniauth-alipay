@@ -1,0 +1,37 @@
+PATH
+  remote: .
+  specs:
+    omniauth-alipay (0.0.1)
+      omniauth (~> 1.1.4)
+      omniauth-oauth2 (~> 1.1.1)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    faraday (0.9.0)
+      multipart-post (>= 1.2, < 3)
+    hashie (2.1.1)
+    httpauth (0.2.1)
+    jwt (0.1.11)
+      multi_json (>= 1.5)
+    multi_json (1.9.2)
+    multipart-post (2.0.0)
+    oauth2 (0.8.1)
+      faraday (~> 0.8)
+      httpauth (~> 0.1)
+      jwt (~> 0.1.4)
+      multi_json (~> 1.0)
+      rack (~> 1.2)
+    omniauth (1.1.4)
+      hashie (>= 1.2, < 3)
+      rack
+    omniauth-oauth2 (1.1.1)
+      oauth2 (~> 0.8.0)
+      omniauth (~> 1.0)
+    rack (1.5.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  omniauth-alipay!
